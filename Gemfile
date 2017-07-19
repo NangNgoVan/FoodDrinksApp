@@ -4,6 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+gem "bootstrap-sass", "3.3.7"
+gem "bootstrap-will_paginate", "1.0.0"
 gem "coffee-rails", "~> 4.2"
 gem "eslint-rails"
 gem "jbuilder", "~> 2.5"
@@ -16,6 +18,7 @@ gem "rubocop-checkstyle_formatter", require: false
 gem "sass-rails", "~> 5.0"
 gem "scss_lint", require: false
 gem "sqlite3"
+gem "therubyracer"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 
