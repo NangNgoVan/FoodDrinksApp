@@ -1,0 +1,17 @@
+IrresponsibleModule:
+  enabled: false
+FeatureEnvy:
+  enabled: false
+InstanceVariableAssumption:
+  enabled: false
+DuplicateMethodCall:
+  enabled: false
+Attribute:
+  enabled: false
+TooManyStatements:
+  enabled: true
+  exclude:
+  - initialize
+  max_statements: 7
+TooManyMethods:
+  max_methods: 20
