@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'stores/new'
+
+  get 'products/new'
+
   devise_for :users
 
   root "pages#home"
@@ -6,10 +10,10 @@ Rails.application.routes.draw do
   get "/help", to: "pages#help"
   get "/about", to: "pages#about"
   get "/contact", to: "pages#contact"
-  get "/products", to: "pages#products"
   get "/pricing", to: "pages#pricing"
   get "/delivery", to: "pages#delivery"
 
   resources :users, only: :show
+  resources :products
 
 end

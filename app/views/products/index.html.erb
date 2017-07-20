@@ -1,0 +1,6 @@
+<div class="content-last">
+  <% @products.each do |prod| %>
+  <%= render "elements/product_item", prod: prod %>
+  <% end %>
+  <div class="clear"></div>
+</div>
