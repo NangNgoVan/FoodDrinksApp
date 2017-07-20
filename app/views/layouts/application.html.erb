@@ -11,16 +11,15 @@
   <body>
     <div class="wrap">
        <div class="total">
-         <%= render "layouts/header" %>
-		 <%= render "layouts/menu" %>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-
-		 <div class="main">
-		 	<div class="content">
-        <%= yield %>
-		 	</div>
-		 </div>
+         <%= render "layouts/header"%>
+		     <%= render "layouts/menu" %>
+         <p class="notice"><%= notice %></p>
+         <p class="alert"><%= alert %></p>
+		     <div class="main">
+		 	     <div class="content">
+             <%= yield %>
+		 	     </div>
+		     </div>
        </div>
     </div>
     <%= render "layouts/footer"%>

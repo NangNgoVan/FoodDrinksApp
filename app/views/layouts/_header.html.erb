@@ -7,7 +7,15 @@
       <li><%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %></li>
     </ul>
   <% else %>
-    <ul><li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li></ul>
+    <ul>
+      <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>|
+      <li><%= link_to "Thong tin ca nhan", user_path(current_user) %></li>|
+      <% if current_user.store%>
+        <li><%= link_to "Quan ly cua hang", store_path(current_user.store) %></li>
+      <% else %>
+        <li><%= link_to "Tao cua hang", new_store_path %></li>
+      <% end %>
+    </ul>
   <% end %>
   </div>
   <div class="clear"></div>

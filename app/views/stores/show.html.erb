@@ -1,0 +1,9 @@
+<% if @store %>
+  <% if @store.user == current_user %>
+    Day la cua hang cua toi!
+  <% else %>
+    Day ko phai la cua hang cua toi!
+  <% end %>
+<% else %>
+  Khong co du lieu.
+<% end %>

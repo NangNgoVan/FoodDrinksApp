@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable
   devise :omniauthable, :omniauth_providers => [:facebook]
+
+  has_one :store
 end
